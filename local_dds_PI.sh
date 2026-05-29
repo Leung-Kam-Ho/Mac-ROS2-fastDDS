@@ -1,0 +1,2 @@
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+source /opt/ros/jazzy/setup.bash
