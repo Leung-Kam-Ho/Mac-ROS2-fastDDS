@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <profiles xmlns="http://www.eprosima.com/XMLSchemas/fastrtps_profiles">
+
+    <transport_descriptors>
+        <transport_descriptor>
+            <transport_id>tcp_transport</transport_id>
+            <type>TCPv4</type>
+        </transport_descriptor>
+    </transport_descriptors>
+
     <participant profile_name="tcp_client_profile" is_default_profile="true">
         <rtps>
             <builtin>
-                <discovery_config><discoveryProtocol>CLIENT</discoveryProtocol></discovery_config>
+                <discovery_config>
+                    <discoveryProtocol>CLIENT</discoveryProtocol>
+                </discovery_config>
                 <discoveryServerList>
                     <RemoteServer prefix="44.53.00.5f.45.50.52.4f.53.49.4d.41">
                         <metatrafficUnicastLocatorList>
-                            <locator><tcpv4><address>192.168.1.120</address><physical_port>11811</physical_port></tcpv4></locator>
+                            <locator>
+                                <tcpv4>
+                                    <address>192.168.1.174</address>
+                                    <physical_port>11811</physical_port>
+                                </tcpv4>
+                            </locator>
                         </metatrafficUnicastLocatorList>
                     </RemoteServer>
                 </discoveryServerList>
             </builtin>
-            <userTransports><transport_id>tcp_transport</transport_id></userTransports>
+            <userTransports>
+                <transport_id>tcp_transport</transport_id>
+            </userTransports>
         </rtps>
     </participant>
 </profiles>
