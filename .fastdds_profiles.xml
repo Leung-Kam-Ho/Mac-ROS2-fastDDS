@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+    <participant profile_name="static_discovery_profile" is_default_profile="true">
+        <rtps>
+            <peer>
+                <address>192.168.1.174</address>
+            </peer>
+        </rtps>
+    </participant>
+</data>
